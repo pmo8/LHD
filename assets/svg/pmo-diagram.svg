@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5d0201"/>
+      <stop offset="100%" stop-color="#8c1210"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#aa820a"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Dark Blueprint Frame -->
+  <rect width="1000" height="620" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Blueprint Grid lines -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="620"/>
+    <line x1="150" y1="0" x2="150" y2="620"/>
+    <line x1="250" y1="0" x2="250" y2="620"/>
+    <line x1="350" y1="0" x2="350" y2="620"/>
+    <line x1="450" y1="0" x2="450" y2="620"/>
+    <line x1="550" y1="0" x2="550" y2="620"/>
+    <line x1="650" y1="0" x2="650" y2="620"/>
+    <line x1="750" y1="0" x2="750" y2="620"/>
+    <line x1="850" y1="0" x2="850" y2="620"/>
+    <line x1="950" y1="0" x2="950" y2="620"/>
+    
+    <line x1="0" y1="70" x2="1000" y2="70"/>
+    <line x1="0" y1="170" x2="1000" y2="170"/>
+    <line x1="0" y1="270" x2="1000" y2="270"/>
+    <line x1="0" y1="370" x2="1000" y2="370"/>
+    <line x1="0" y1="470" x2="1000" y2="470"/>
+    <line x1="0" y1="570" x2="1000" y2="570"/>
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="40" y="30" width="920" height="80" rx="12" fill="url(#redGrad)" filter="url(#shadow)"/>
+  <text x="500" y="62" font-family="'Lato', sans-serif" font-size="21" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">
+    KHUNG NĂNG LỰC THỰC THI PMO TÍCH HỢP SỐ
+  </text>
+  <text x="500" y="88" font-family="'Roboto', sans-serif" font-size="13" font-weight="500" fill="#fde047" text-anchor="middle" letter-spacing="1">
+    CHUẨN HÓA LAYOUT HẠ TẦNG KỸ THUẬT CHO HỆ THỐNG QUẢN TRỊ LINH HOẠT (AGILE PMO)
+  </text>
+
+  <!-- Layer 1: Core Hub (Center) -->
+  <circle cx="500" cy="340" r="95" fill="url(#redGrad)" stroke="url(#goldGrad)" stroke-width="4" filter="url(#shadow)"/>
+  <circle cx="500" cy="340" r="80" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="500" y="325" font-family="'Lato', sans-serif" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">KIEN LAC</text>
+  <text x="500" y="345" font-family="'Lato', sans-serif" font-size="14" font-weight="700" fill="#fde047" text-anchor="middle">DIDI CENTER</text>
+  <text x="500" y="365" font-family="'Roboto', sans-serif" font-size="11" font-weight="400" fill="#e2e8f0" text-anchor="middle">Hạt Nhân Điều Hành PMO</text>
+
+  <!-- Node 1: Left Top - Chuẩn Hóa Dữ Liệu & Quy Chuẩn KT -->
+  <g transform="translate(60, 150)" filter="url(#shadow)">
+    <rect width="250" height="110" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect width="250" height="32" rx="10" fill="#5d0201"/>
+    <rect y="22" width="250" height="10" fill="#5d0201"/>
+    <text x="125" y="21" font-family="'Lato', sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">1. HẠ TẦNG KỸ THUẬT SỐ</text>
+    <text x="15" y="55" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Chuẩn hóa Layout hạ tầng</text>
+    <text x="15" y="75" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Mô hình CDE &amp; Cloud Data</text>
+    <text x="15" y="95" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Tích hợp BIM - GIS Đồng bộ</text>
+  </g>
+
+  <!-- Node 2: Right Top - Thiết Lập Mô Hình PMO -->
+  <g transform="translate(690, 150)" filter="url(#shadow)">
+    <rect width="250" height="110" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect width="250" height="32" rx="10" fill="#5d0201"/>
+    <rect y="22" width="250" height="10" fill="#5d0201"/>
+    <text x="125" y="21" font-family="'Lato', sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2. MÔ HÌNH ĐIỀU HÀNH PMO</text>
+    <text x="15" y="55" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Khung năng lực thực thi PMO</text>
+    <text x="15" y="75" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Phân cấp quản trị dự án BĐS</text>
+    <text x="15" y="95" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Kiểm soát tiến độ &amp; chi phí</text>
+  </g>
+
+  <!-- Node 3: Left Bottom - Phương Pháp Quản Trị Agile -->
+  <g transform="translate(60, 420)" filter="url(#shadow)">
+    <rect width="250" height="110" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect width="250" height="32" rx="10" fill="#5d0201"/>
+    <rect y="22" width="250" height="10" fill="#5d0201"/>
+    <text x="125" y="21" font-family="'Lato', sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3. HỆ THỐNG QUẢN TRỊ LINH HOẠT</text>
+    <text x="15" y="55" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Chu kỳ ngắn &amp; phản hồi nhanh</text>
+    <text x="15" y="75" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Thích ứng điều chỉnh thay đổi</text>
+    <text x="15" y="95" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Tinh thần khởi nghiệp bền bỉ</text>
+  </g>
+
+  <!-- Node 4: Right Bottom - Kiến Thiết & Phát Triển Bền Vững -->
+  <g transform="translate(690, 420)" filter="url(#shadow)">
+    <rect width="250" height="110" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect width="250" height="32" rx="10" fill="#5d0201"/>
+    <rect y="22" width="250" height="10" fill="#5d0201"/>
+    <text x="125" y="21" font-family="'Lato', sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4. KIẾN TẠO &amp; ĐỔI MỚI SÁNG TẠO</text>
+    <text x="15" y="55" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Chuyển giao công nghệ &amp; R&amp;D</text>
+    <text x="15" y="75" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Đào tạo nhân lực chất lượng cao</text>
+    <text x="15" y="95" font-family="'Roboto', sans-serif" font-size="12" fill="#334155">• Đồng hành phát triển đất nước</text>
+  </g>
+
+  <!-- Connecting Arrows / Paths with pulsing glow -->
+  <path d="M310 205 Q 400 240 420 300" fill="none" stroke="#d4af37" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <path d="M690 205 Q 600 240 580 300" fill="none" stroke="#d4af37" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <path d="M310 475 Q 400 440 420 380" fill="none" stroke="#d4af37" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <path d="M690 475 Q 600 440 580 380" fill="none" stroke="#d4af37" stroke-width="2.5" stroke-dasharray="6,4"/>
+
+  <!-- Orbital Ring -->
+  <ellipse cx="500" cy="340" rx="280" ry="170" fill="none" stroke="rgba(212,175,55,0.25)" stroke-width="1.5" stroke-dasharray="10,6"/>
+
+  <!-- Footer Tagline inside SVG -->
+  <text x="500" y="585" font-family="'Roboto', sans-serif" font-size="13.5" font-weight="500" fill="#cbd5e1" text-anchor="middle">
+    "Một Ngôi Nhà thành công, có Nội Khí • Một Người thành công, có Nội Lực • Một Tổ Chức thành công, có Nội Bộ bền vững!"
+  </text>
+</svg>

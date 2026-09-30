@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin Tức Sự Kiện | KIEN LAC DIDI CENTER</title>
+  <meta name="description" content="Tin tức sự kiện, bản tin nội bộ, nghiên cứu PMO và cẩm nang điều chỉnh dự án xây dựng tại Kiến Lạc DIDI Center.">
+  <link rel="icon" type="image/svg+xml" href="assets/svg/logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <span class="top-bar-badge">Tin tức</span>
+        <span class="top-bar-item">
+          <i class="fas fa-university text-yellow-400"></i>
+          Viện Nghiên Cứu Chiến Lược &amp; Phát Triển Lạc Hồng
+        </span>
+        <span class="top-bar-item hidden md:inline-flex">
+          <i class="fas fa-map-marker-alt text-yellow-400"></i>
+          190 Võ Văn Ngân, TP. Thủ Đức, TP. Hồ Chí Minh
+        </span>
+      </div>
+      <div class="top-bar-info">
+        <a href="tel:0909860118" class="top-bar-item font-semibold hover:text-yellow-300">
+          <i class="fas fa-phone-alt text-yellow-400"></i>
+          0909.860.118 (Mr. William)
+        </a>
+        <a href="mailto:contact@kienlac.vn" class="top-bar-item hover:text-yellow-300">
+          <i class="fas fa-envelope text-yellow-400"></i>
+          contact@kienlac.vn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-brand">
+        <img src="assets/svg/logo.svg" alt="Kiến Lạc DIDI Center Logo">
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li><a href="gioi-thieu.html" class="nav-link">Giới thiệu chung</a></li>
+          <li><a href="tin-tuc.html" class="nav-link active">Tin tức sự kiện</a></li>
+          <li><a href="tuyen-dung.html" class="nav-link">Tuyển dụng</a></li>
+          <li><a href="lien-he.html" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://chat.whatsapp.com/ERHY3osLlYR9xsZAFGWEO5" target="_blank" class="btn-contact">
+          <i class="fab fa-whatsapp text-lg"></i> Kết Nối Ngay
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Mở menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="bg-gradient-to-r from-[#3e0100] via-[#5d0201] to-[#3e0100] text-white py-16 relative">
+    <div class="container relative z-10 text-center">
+      <span class="inline-block text-yellow-400 font-bold text-xs uppercase tracking-widest bg-yellow-400/10 px-4 py-1.5 rounded-full mb-3">
+        Cổng Thông Tin Kiến Thức &amp; Hoạt Động
+      </span>
+      <h1 class="text-3xl md:text-5xl font-black mb-4">TIN TỨC &amp; SỰ KIỆN</h1>
+      <p class="text-slate-200 max-w-2xl mx-auto text-base md:text-lg">
+        Tổng hợp các phân tích, cẩm nang quản trị dự án, chuyển đổi số BIM Center và bản tin nội bộ Kiến Lạc.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter & Articles -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+        <button class="filter-btn active bg-red-800 text-white font-semibold px-4 py-2 rounded-lg text-sm transition" data-filter="all">
+          Tất cả bài viết
+        </button>
+        <button class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-lg text-sm transition" data-filter="pmo">
+          PMO &amp; Quản trị
+        </button>
+        <button class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-lg text-sm transition" data-filter="phap-ly">
+          Pháp lý Xây dựng
+        </button>
+        <button class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-lg text-sm transition" data-filter="bim">
+          BIM &amp; Chuyển đổi số
+        </button>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Article 1: Không dự án XD nào mà không điều chỉnh thay đổi -->
+        <article class="news-item-filterable bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col" data-category="phap-ly" id="dieu-chinh-du-an">
+          <div class="h-64 bg-slate-900 relative cursor-pointer" onclick="openModal('assets/svg/quy-trinh-dieu-chinh.svg', 'Sơ đồ Quy định Điều chỉnh Dự án Đầu tư XD')">
+            <img src="assets/svg/quy-trinh-dieu-chinh.svg" alt="Sơ đồ điều chỉnh dự án xây dựng" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 bg-[#5d0201] text-white text-xs font-bold px-3 py-1 rounded">
+              Pháp lý Xây dựng
+            </span>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="text-xs text-gray-500 mb-2 flex items-center gap-2">
+              <span><i class="far fa-calendar-alt"></i> Cẩm nang PMO</span>
+              <span>•</span>
+              <span>Hiểu Nhanh, Nắm Gọn, Làm Ngay</span>
+            </div>
+            <h2 class="text-xl font-bold text-[#5d0201] mb-3 leading-snug">
+              Không dự án XD nào mà không điều chỉnh thay đổi
+            </h2>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed flex-grow">
+              <strong>TỔNG HỢP TOÀN BỘ QUY ĐỊNH VỀ ĐIỀU CHỈNH - BỔ SUNG - THAY ĐỔI</strong> trong các bước tiến trình dự án đầu tư XD. Đọc rừng luật sẽ rối, hãy xem sơ đồ chia sẻ sẵn: <em>HIỂU NHANH , NẮM GỌN, LÀM NGAY.</em>
+            </p>
+            <div class="p-4 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 mb-4 space-y-1">
+              <p><strong>3 Giai đoạn cốt lõi cần kiểm soát:</strong></p>
+              <p>1. Giai đoạn chuẩn bị: Điều chỉnh chủ trương đầu tư, quy hoạch 1/500, F/S, ĐTM.</p>
+              <p>2. Giai đoạn thực hiện: Điều chỉnh TK BVTC, tổng dự toán, hợp đồng &amp; phát sinh.</p>
+              <p>3. Giai đoạn kết thúc: Nghiệm thu PCCC/Sở XD, hồ sơ hoàn công, quyết toán vốn.</p>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <button onclick="openModal('assets/svg/quy-trinh-dieu-chinh.svg', 'Sơ đồ Quy định Điều chỉnh Dự án Đầu tư XD')" class="text-sm font-bold text-[#5d0201] hover:underline flex items-center gap-1.5">
+                <i class="fas fa-search-plus"></i> Xem sơ đồ phóng to
+              </button>
+              <a href="https://chat.whatsapp.com/ERHY3osLlYR9xsZAFGWEO5" target="_blank" class="text-xs font-bold text-green-700 hover:underline flex items-center gap-1">
+                <i class="fab fa-whatsapp"></i> Thảo luận chuyên sâu
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2: Thiết lập hệ thống nền tảng tích hợp số -->
+        <article class="news-item-filterable bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col" data-category="pmo" id="nen-tang-so">
+          <div class="h-64 bg-slate-900 relative cursor-pointer" onclick="openModal('assets/svg/pmo-diagram.svg', 'Khung Năng Lực PMO Tích Hợp Số')">
+            <img src="assets/svg/pmo-diagram.svg" alt="Khung năng lực PMO tích hợp số" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 bg-blue-800 text-white text-xs font-bold px-3 py-1 rounded">
+              Quản Trị PMO
+            </span>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="text-xs text-gray-500 mb-2 flex items-center gap-2">
+              <span><i class="far fa-calendar-alt"></i> Nền tảng số hóa</span>
+              <span>•</span>
+              <span>Kiến Lạc DIDI Center</span>
+            </div>
+            <h2 class="text-xl font-bold text-[#5d0201] mb-3 leading-snug">
+              Thiết lập hệ thống nền tảng tích hợp số Kiến Lạc DIDI Center
+            </h2>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed flex-grow">
+              Mô hình tư duy <strong>"Hạt Nhân hóa" đa tích hợp</strong>, áp dụng triệt để trong thời gian tăng trưởng THẦN TỐC, tiền thân của các khái niệm mô hình linh hoạt (Agile) trong quản lý, phát triển dự án dựa trên các chu kỳ ngắn và phản hồi liên tục.
+            </p>
+            <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg text-xs text-blue-900 mb-4 space-y-1">
+              <p><strong>Khung thực thi chuẩn hóa:</strong></p>
+              <p>• Chuẩn hóa Layout Hạ tầng kỹ thuật cho nền tảng tích hợp số hóa.</p>
+              <p>• Thiết lập nền tảng Mô Hình điều hành PMO linh hoạt thích ứng.</p>
+              <p>• Tích hợp CDE, BIM và quản lý dòng thông tin minh bạch.</p>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <button onclick="openModal('assets/svg/pmo-diagram.svg', 'Khung Năng Lực PMO Tích Hợp Số')" class="text-sm font-bold text-[#5d0201] hover:underline flex items-center gap-1.5">
+                <i class="fas fa-search-plus"></i> Xem sơ đồ năng lực
+              </button>
+              <a href="gioi-thieu.html" class="text-xs font-bold text-gray-700 hover:underline">
+                Về chúng tôi <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3: Đề xuất khởi xướng BIM Center -->
+        <article class="news-item-filterable bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col" data-category="bim" id="bim-center">
+          <div class="h-64 bg-slate-900 relative cursor-pointer" onclick="openModal('assets/svg/bim-center.svg', 'Mô hình tư duy Hạt Nhân Hóa - BIM Center')">
+            <img src="assets/svg/bim-center.svg" alt="Đề xuất BIM Center" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 bg-indigo-800 text-white text-xs font-bold px-3 py-1 rounded">
+              BIM &amp; Chuyển Đổi Số
+            </span>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="text-xs text-gray-500 mb-2 flex items-center gap-2">
+              <span><i class="far fa-calendar-alt"></i> Khởi xướng R&amp;D</span>
+              <span>•</span>
+              <span>Work To Learn, Not To EARN</span>
+            </div>
+            <h2 class="text-xl font-bold text-[#5d0201] mb-3 leading-snug">
+              Đề xuất khởi xướng BIM Center
+            </h2>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed flex-grow">
+              Sống, cống hiến và chiến đấu đúng nghĩa cho tinh thần <strong>"Work To Learn, Not To EARN"</strong>, không phải là theo kiểu ĐỒNG BÓNG hay ẢO TƯỞNG sức mạnh, mà bằng chính đôi tay, khối óc, sự nỗ lực của hàng trăm nghìn con người cùng quy tụ/ hội tụ về góp Trí Lực, Sinh Lực và Thể lực dựng xây.
+            </p>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+              Từng công trình điện sáng nước chảy quạt quay - từng dự án kiến tạo nên hình hài đô thị, từng khu nghỉ dưỡng đẳng cấp của thương hiệu Việt, cho đến các đề án thất bại cho chuyển đổi khoa học công nghệ... đều là nền móng tôi luyện nên năng lực quốc gia.
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <button onclick="openModal('assets/svg/bim-center.svg', 'Mô hình tư duy Hạt Nhân Hóa - BIM Center')" class="text-sm font-bold text-[#5d0201] hover:underline flex items-center gap-1.5">
+                <i class="fas fa-search-plus"></i> Khám phá mô hình
+              </button>
+              <a href="https://chat.whatsapp.com/ERHY3osLlYR9xsZAFGWEO5" target="_blank" class="text-xs font-bold text-green-700 hover:underline">
+                <i class="fab fa-whatsapp"></i> Thảo luận đề án
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4: Người giữ nhịp cho những đô thị tương lai -->
+        <article class="news-item-filterable bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col" data-category="pmo" id="nguoi-giu-nhip">
+          <div class="h-64 bg-slate-900 relative">
+            <img src="assets/svg/logo.svg" alt="Người giữ nhịp cho những đô thị tương lai" class="w-full h-full object-contain p-8 bg-gradient-to-br from-red-950 to-slate-900">
+            <span class="absolute top-3 left-3 bg-[#5d0201] text-white text-xs font-bold px-3 py-1 rounded">
+              Bản Tin Nội Bộ
+            </span>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="text-xs text-gray-500 mb-2 flex items-center gap-2">
+              <span><i class="far fa-calendar-alt"></i> Bản Tin Nội Bộ</span>
+              <span>•</span>
+              <span>Kỳ 1</span>
+            </div>
+            <h2 class="text-xl font-bold text-[#5d0201] mb-3 leading-snug">
+              Người giữ nhịp cho những đô thị tương lai
+            </h2>
+            <p class="text-gray-600 text-sm mb-4 leading-relaxed flex-grow">
+              Tôn vinh những người PMO trong hành trình nghiên cứu, phát triển, điều hành và QLDA BĐS. Tri ân những con người bền bỉ giữ kỷ luật, gìn giữ mục tiêu và âm thầm làm nên nền móng cho những công trình của tương lai.
+            </p>
+            <div class="p-4 bg-red-50 border-l-4 border-[#5d0201] text-xs text-red-900 mb-4">
+              <p class="italic">
+                “Nơi tinh hoa Việt Nam cùng hội tụ và phát triển bền vững — Trên cơ sở Không gian của VIỆN NGHIÊN CỨU CHIẾN LƯỢC VÀ PHÁT TRIỂN LẠC HỒNG, chính thức kiến tạo nên TRUNG TÂM NGHIÊN CỨU, THIẾT KẾ TÍCH HỢP SỐ VÀ ĐỔI MỚI SÁNG TẠO KIẾN LẠC.”
+              </p>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <a href="https://chat.whatsapp.com/ERHY3osLlYR9xsZAFGWEO5" target="_blank" class="text-sm font-bold text-[#5d0201] hover:underline flex items-center gap-1.5">
+                Xem thêm trên WhatsApp <i class="fas fa-external-link-alt text-xs"></i>
+              </a>
+              <a href="gioi-thieu.html" class="text-xs font-bold text-gray-700 hover:underline">
+                Đọc về Kiến Lạc <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/svg/logo.svg" alt="Kiến Lạc Logo" class="h-12 w-auto bg-white p-1 rounded">
+          </div>
+          <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+            <strong>Cơ quan chủ quản:</strong> Viện Nghiên Cứu Chiến Lược Và Phát Triển Lạc Hồng.<br>
+            <strong>TRUNG TÂM NGHIÊN CỨU, THIẾT KẾ TÍCH HỢP SỐ VÀ ĐỔI MỚI SÁNG TẠO KIẾN LẠC</strong>.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Về Chúng Tôi</h4>
+          <ul class="footer-links">
+            <li><a href="gioi-thieu.html">Giới thiệu chung</a></li>
+            <li><a href="gioi-thieu.html#van-hoa">Văn hoá doanh nghiệp</a></li>
+            <li><a href="gioi-thieu.html#ban-lanh-dao">Ban lãnh đạo</a></li>
+            <li><a href="tin-tuc.html">Tin tức sự kiện</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Liên Kết Nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="tuyen-dung.html">Cơ hội nghề nghiệp</a></li>
+            <li><a href="lien-he.html">Thông tin liên hệ</a></li>
+            <li><a href="https://chat.whatsapp.com/ERHY3osLlYR9xsZAFGWEO5" target="_blank">Nhóm WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Thông Tin Liên Hệ</h4>
+          <p class="text-slate-300 text-sm mb-2">
+            <i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i>
+            190 Đ. Võ Văn Ngân, Thủ Đức, TP. Hồ Chí Minh
+          </p>
+          <p class="text-slate-300 text-sm mb-2">
+            <i class="fas fa-phone-alt text-yellow-400 mr-2"></i>
+            0909.860.118 (Mr. William)
+          </p>
+          <p class="text-slate-300 text-sm mb-4">
+            <i class="fas fa-envelope text-yellow-400 mr-2"></i>
+            contact@kienlac.vn
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 Kien Lac. All rights reserved.</p>
+        <p>Phát triển trên nền tảng tích hợp số hoá &amp; quản trị linh hoạt.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Diagram Viewer -->
+  <div class="modal" id="diagramModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Sơ đồ chi tiết</h3>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Chi tiết sơ đồ" class="w-full h-auto rounded">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

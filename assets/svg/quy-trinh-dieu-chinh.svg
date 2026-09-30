@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5d0201"/>
+      <stop offset="50%" stop-color="#831110"/>
+      <stop offset="100%" stop-color="#5d0201"/>
+    </linearGradient>
+    <linearGradient id="phase1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="phase2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="phase3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1100" height="680" rx="16" fill="#f8fafc"/>
+  
+  <!-- Outer border -->
+  <rect x="15" y="15" width="1070" height="650" rx="12" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Top Title Banner -->
+  <rect x="30" y="30" width="1040" height="100" rx="10" fill="url(#headerGrad)" filter="url(#cardShadow)"/>
+  <text x="550" y="65" font-family="'Lato', sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    TỔNG HỢP QUY ĐỊNH ĐIỀU CHỈNH - BỔ SUNG - THAY ĐỔI
+  </text>
+  <text x="550" y="90" font-family="'Roboto', sans-serif" font-size="14" font-weight="700" fill="#fde047" text-anchor="middle" letter-spacing="0.5">
+    TRONG CÁC BƯỚC TIẾN TRÌNH DỰ ÁN ĐẦU TƯ XÂY DỰNG
+  </text>
+  <text x="550" y="112" font-family="'Roboto', sans-serif" font-size="12" font-weight="400" fill="#f1f5f9" text-anchor="middle" font-style="italic">
+    "Đọc rừng luật sẽ rối, hãy xem sơ đồ chia sẻ sẵn — HIỂU NHANH, NẮM GỌN, LÀM NGAY"
+  </text>
+
+  <!-- 3 Phases Pipeline Headers -->
+  
+  <!-- Phase 1: Chuẩn Bị Dự Án -->
+  <g transform="translate(45, 150)">
+    <rect width="310" height="42" rx="8" fill="url(#phase1Grad)" filter="url(#cardShadow)"/>
+    <text x="155" y="26" font-family="'Lato', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">
+      GIAI ĐOẠN 1: CHUẨN BỊ ĐẦU TƯ
+    </text>
+    
+    <!-- Items -->
+    <g transform="translate(0, 55)">
+      <rect width="310" height="100" rx="8" fill="#ffffff" stroke="#bae6fd" stroke-width="1.5" filter="url(#cardShadow)"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="13" font-weight="700" fill="#0369a1">1. Điều chỉnh Chủ trương đầu tư</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Thay đổi mục tiêu, quy mô, địa điểm</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Thay đổi tổng vốn đầu tư trên 20%</text>
+      <text x="15" y="87" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Kéo dài tiến độ thực hiện dự án</text>
+    </g>
+
+    <g transform="translate(0, 170)">
+      <rect width="310" height="100" rx="8" fill="#ffffff" stroke="#bae6fd" stroke-width="1.5" filter="url(#cardShadow)"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="13" font-weight="700" fill="#0369a1">2. Điều chỉnh Quy hoạch &amp; Báo cáo NC</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Điều chỉnh quy hoạch chi tiết 1/500</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Thẩm định lại Báo cáo NCKT (F/S)</text>
+      <text x="15" y="87" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Điều chỉnh ĐTM / Giấy phép môi trường</text>
+    </g>
+    
+    <g transform="translate(0, 285)">
+      <rect width="310" height="90" rx="8" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.2"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="12" font-weight="700" fill="#0369a1">Căn cứ pháp lý chủ chốt:</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11" fill="#334155">• Luật Đầu tư 2020 &amp; Nghị định 31/2021</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11" fill="#334155">• Luật Xây dựng sửa đổi 2020 &amp; NĐ 15/2021</text>
+    </g>
+  </g>
+
+  <!-- Arrow between Phase 1 and Phase 2 -->
+  <polygon points="370,170 385,170 385,165 395,171 385,177 385,172 370,172" fill="#0284c7"/>
+
+  <!-- Phase 2: Thực Hiện Dự Án -->
+  <g transform="translate(395, 150)">
+    <rect width="310" height="42" rx="8" fill="url(#phase2Grad)" filter="url(#cardShadow)"/>
+    <text x="155" y="26" font-family="'Lato', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">
+      GIAI ĐOẠN 2: THỰC HIỆN DỰ ÁN
+    </text>
+    
+    <!-- Items -->
+    <g transform="translate(0, 55)">
+      <rect width="310" height="100" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5" filter="url(#cardShadow)"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="13" font-weight="700" fill="#9a3412">3. Điều chỉnh Thiết kế &amp; Dự toán</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Thay đổi địa chất, tải trọng, công năng</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Thẩm tra, phê duyệt TK BVTC điều chỉnh</text>
+      <text x="15" y="87" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Điều chỉnh dự toán gói thầu xây lắp</text>
+    </g>
+
+    <g transform="translate(0, 170)">
+      <rect width="310" height="100" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5" filter="url(#cardShadow)"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="13" font-weight="700" fill="#9a3412">4. Điều chỉnh Hợp đồng Xây dựng</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Phát sinh khối lượng ngoài hợp đồng</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Bổ sung đơn giá, bù trừ trượt giá</text>
+      <text x="15" y="87" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Gia hạn thời gian hoàn thành (EOT)</text>
+    </g>
+    
+    <g transform="translate(0, 285)">
+      <rect width="310" height="90" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.2"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="12" font-weight="700" fill="#9a3412">Lưu ý rủi ro PMO:</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11" fill="#334155">• Vượt Tổng mức đầu tư chưa phê duyệt</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11" fill="#334155">• Thi công trước khi ký phụ lục hợp đồng</text>
+    </g>
+  </g>
+
+  <!-- Arrow between Phase 2 and Phase 3 -->
+  <polygon points="720,170 735,170 735,165 745,171 735,177 735,172 720,172" fill="#b45309"/>
+
+  <!-- Phase 3: Kết Thúc & Nghiệm Thu -->
+  <g transform="translate(745, 150)">
+    <rect width="310" height="42" rx="8" fill="url(#phase3Grad)" filter="url(#cardShadow)"/>
+    <text x="155" y="26" font-family="'Lato', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">
+      GIAI ĐOẠN 3: KẾT THÚC &amp; VẬN HÀNH
+    </text>
+    
+    <!-- Items -->
+    <g transform="translate(0, 55)">
+      <rect width="310" height="100" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.5" filter="url(#cardShadow)"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="13" font-weight="700" fill="#15803d">5. Nghiệm thu &amp; Bàn giao</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Nghiệm thu PCCC, Môi trường, Sở XD</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Hồ sơ hoàn công cập nhật thay đổi</text>
+      <text x="15" y="87" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Chấp thuận kết quả nghiệm thu</text>
+    </g>
+
+    <g transform="translate(0, 170)">
+      <rect width="310" height="100" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.5" filter="url(#cardShadow)"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="13" font-weight="700" fill="#15803d">6. Quyết toán Vốn Đầu tư</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Kiểm toán độc lập Báo cáo quyết toán</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Thẩm tra phê duyệt quyết toán hoàn thành</text>
+      <text x="15" y="87" font-family="'Roboto', sans-serif" font-size="11.5" fill="#475569">• Tất toán hợp đồng và bảo hành công trình</text>
+    </g>
+    
+    <g transform="translate(0, 285)">
+      <rect width="310" height="90" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+      <text x="15" y="25" font-family="'Roboto', sans-serif" font-size="12" font-weight="700" fill="#15803d">Nguyên tắc cốt lõi PMO:</text>
+      <text x="15" y="47" font-family="'Roboto', sans-serif" font-size="11" fill="#334155">• Hồ sơ minh bạch, chuỗi mắt xích liên tục</text>
+      <text x="15" y="67" font-family="'Roboto', sans-serif" font-size="11" fill="#334155">• Tích hợp số hóa trên nền tảng CDE</text>
+    </g>
+  </g>
+
+  <!-- Bottom CTA Footer Bar -->
+  <rect x="30" y="555" width="1040" height="90" rx="10" fill="#5d0201"/>
+  <text x="550" y="590" font-family="'Lato', sans-serif" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">
+    TRUNG TÂM NGHIÊN CỨU, THIẾT KẾ TÍCH HỢP SỐ VÀ ĐỔI MỚI SÁNG TẠO KIẾN LẠC (KIEN LAC DIDI CENTER)
+  </text>
+  <text x="550" y="618" font-family="'Roboto', sans-serif" font-size="13" font-weight="400" fill="#fde047" text-anchor="middle">
+    Hotline tư vấn &amp; chuyển giao: 0909.860.118 (Mr. William) • Email: contact@kienlac.vn
+  </text>
+</svg>
